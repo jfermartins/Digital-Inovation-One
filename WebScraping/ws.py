@@ -8,5 +8,11 @@ soup = BeautifulSoup(site, 'html.parser')
 
 print(soup.prettify())
 
-temperatura = soup.find("span", class_)
+temperatura = soup.find("span", class_="_block _margim-b-5 -gray")
+
+print(temperatura.string)
+
+print(soup.title.string)
+
+print(soup.a)
 
